@@ -4,7 +4,7 @@ var fs = require('fs');
 
 module.exports = function( controller ) {
 
-    controller.hears( [ 'hi','hello','howdy','hey','aloha','hola','bonjour','oi' ], 'message,direct_message', async ( bot,message ) => {
+    controller.hears( [ 'ola k ase?' ], 'message,direct_message', async ( bot,message ) => {
 
         await bot.reply( message,'Ola k ase?' );
         await bot.reply( message, { markdown: 'desarrollando o k ase?' } );
