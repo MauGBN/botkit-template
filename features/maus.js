@@ -18,15 +18,5 @@ module.exports = function( controller ) {
         });
     })
 
-    controller.hears( 'local', 'message,direct_message' , async ( bot,message ) => {
-        await bot.reply( message, {
-            text: 'The source code',
-            files: [ fs.createReadStream( './bot.js' ) ]
-        })
-    })
-
-    controller.commandHelp.push( { command: 'hello', text: 'Greetings!' } );
-    controller.commandHelp.push( { command: 'url', text: 'Attach a file via URL' } );
-    controller.commandHelp.push( { command: 'local', text: 'Attach a file from the local file system' } );
-
+    controller.commandHelp.push( { command: 'ola k ase?', text: 'un saludo' } );
 }
